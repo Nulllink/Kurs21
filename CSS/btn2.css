@@ -1,0 +1,40 @@
+a.btn2 {
+    display: inline-block;
+    text-shadow: 1px 1px #f7dbba;
+    text-decoration: none;
+    padding: .3em 1em;
+    border: 1px solid #aaa;
+    border-radius: 100px;
+    outline: none;
+    background: #FF8C00 no-repeat;
+    background-image:
+     /* linear-gradient(to left, #FF8C00, #FF8C00), */
+     linear-gradient(to left, #f7dbba, #f7dbba),
+     linear-gradient(to left, #ffc47c, #ffc47c),
+     linear-gradient(#f7dbba, #f7dbba);
+    background-position: calc(100% - 2.7em) 0, calc(100% - 2.7em + 1px) 0, 0 0;
+    background-size: 1px 100%, 1px 100%, auto auto;
+    overflow: hidden;
+  }
+  a.btn2:after {
+    content: url(../Images/Params.ico);
+    position: relative;
+    margin-left: 5px;
+    bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10%;
+    height: 10%;
+  }
+  a.btn2:hover {
+    background-color: #fdfd9f;
+    background-image:
+     /* linear-gradient(to left, #aaa, #aaa), */
+     linear-gradient(#FFD700, #FFFF00),
+     linear-gradient(to left, #FFD700, #FFD700),
+     linear-gradient(#FFD700, #FFFF00);
+  }
+  a.btn2:active:after {
+    bottom: -1.2em;
+    transition: .3s;
+  }
