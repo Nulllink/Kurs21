@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/btn2.css">
     <link rel="stylesheet" type="text/css" href="CSS/btn3.css">
     <script type="text/javascript" src="JS/Code.js"></script>
-
+    
 </head>
 <body class="body">
     <div class="div1" align="middle">
@@ -16,44 +16,34 @@
             <form class="form1">
                 <div class="div3">
                     <svg class="p1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#FA3E2C" d="M12 4c4.416 0 8 3.584 8 8s-3.584 8-8 8-8-3.584-8-8 3.584-8 8-8zm0 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path></svg>
-                    <input type="text" id="ina" maxlength="25" size="40" value="Ваше местоположение">
+                    <input type="text" id="ins" maxlength="25" size="40" value="Ваше местоположение">
                     <img src="Images/Cros.ico" class="img3">
                 </div>
                 <div class="div3" id="div3_1">
                     <svg class="p1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#0400ff" d="M12 4c4.416 0 8 3.584 8 8s-3.584 8-8 8-8-3.584-8-8 3.584-8 8-8zm0 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path></svg>
-                    <input class="inp1" type="text" id="ina" maxlength="25" size="40" value="Дом">
+                    <input class="inp1" type="text" id="inf" maxlength="25" size="40" value="Дом">
                     <img src="Images/Cros.ico" class="img3">
                 </div>
-                <!-- <table>
-                    <tr class="tr1">
-                        <td><strong>Откуда</strong></td> 
-                        <td><input type="text" id="ina" maxlength="25" size="40" value="Ваше местоположение"></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Куда</strong></td>
-                        <td><input type="text" id="inb" maxlength="25" size="40" value="Дом"></td>
-                    </tr>
-                </table> -->
-                <p><strong>Выберите класс такси</strong></p>
+                <h1>Выберите класс такси</h1>
                 <!--Pictures of taxi-->
                 <table class="table2">
                     <tr>
-                        <td class="car1"><img src="Images/taxi_car.png" class="img2"></td>
-                        <td class="car1"><img src="Images/taxi_car.png" class="img2"></td>
-                        <td class="car1"><img src="Images/taxi_car.png" class="img2"></td>
-                        <td class="car1"><img src="Images/taxi_car.png" class="img2"></td>
+                        <td class="car1" id="c1" onclick="carPush('c1')" align="middle"><img src="Images/taxi_car.png" class="img2"></td>
+                        <td class="car1" id="c2" onclick="carPush('c2')"><img src="Images/taxi_car.png" class="img2"></td>
+                        <td class="car1" id="c3" onclick="carPush('c3')"><img src="Images/taxi_car.png" class="img2"></td>
+                        <td class="car1" id="c4" onclick="carPush('c4')"><img src="Images/taxi_car.png" class="img2"></td>
                     </tr>
                     <tr>
-                        <td class="td3">Эконом</td>
-                        <td class="td3">Комфорт</td>
-                        <td class="td3">Комфорт+</td>
-                        <td class="td3">Бизнес</td>
+                        <td class="td3" align="middle">Эконом</td>
+                        <td class="td3" align="middle">Комфорт</td>
+                        <td class="td3" align="middle">Комфорт+</td>
+                        <td class="td3" align="middle">Бизнес</td>
                     </tr>
                     <tr>
-                        <td class="td4">139P</td>
-                        <td class="td4">200P</td>
-                        <td class="td4">249P</td>
-                        <td class="td4">421P</td>
+                        <td class="td4" align="middle">139P</td>
+                        <td class="td4" align="middle">200P</td>
+                        <td class="td4" align="middle">249P</td>
+                        <td class="td4" align="middle">421P</td>
                     </tr>
                 </table>
                 <table class="table1">
@@ -67,7 +57,8 @@
                     </tbody>
                 </table>
                 <!-- <p><input class="btn1" type="button"  value="Заказать" onclick="order()"></p>-->
-                <a class="btn1" tabindex="0">Заказать</a>
+                <a href="javascript: goToPage();" class="btn1" tabindex="0">Заказать</a>
+                <!-- <a href="HTML/After_order.html" class="btn1" tabindex="0">Заказать</a> -->
             </form>
         </div>
     </div>

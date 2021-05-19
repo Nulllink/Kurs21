@@ -81,3 +81,13 @@ input[type="text"] {
  .img3:hover{
     background-color: rgba(128, 128, 128, 0.200);
  }
+ h1 { color: #000000; font-family: ‘Lato’, sans-serif; font-size: 30px; font-weight: 300; line-height: 58px; margin: 0 0 0px; }
+
+ .td3{
+    color: #1d1d1d; font-family: ‘Lucida Sans’, Arial, sans-serif;
+    border-right: 30px solid white;
+ }
+ .td4{
+    color: #1d1d1d; font-family: ‘Lucida Sans’, Arial, sans-serif;
+    border-right: 30px solid white;
+ }
