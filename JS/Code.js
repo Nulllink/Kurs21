@@ -80,7 +80,7 @@ function delete_text(id){
         elem.value = "";
         elem.style.color = "black";
     }
-    if(elem.value == "Комментарий"){
+    if(elem.value == "Комментарий" || elem.value == "Ваш телефон"){
         elem.value = "";
         elem.style.color = "black";
     }
