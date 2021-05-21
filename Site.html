@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Форма вызова такси</title>
+        <link rel="shortcut icon" href="Images/taxi_icon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/btn1.css">
+        <link rel="stylesheet" type="text/css" href="CSS/btn2.css">
+        <link rel="stylesheet" type="text/css" href="CSS/btn3.css">
+        <script type="text/javascript" src="JS/Code.js"></script>
+        
+    </head>
+    <body class="body">
+        <div class="div1" align="middle">
+            <div class="div2">
+                <iframe class="img1" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6054.483077358546!2d37.705480832120585!3d55.75744002234642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1620997683336!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <form class="form1">
+                    <div class="div3">
+                        <svg class="p1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#FA3E2C" d="M12 4c4.416 0 8 3.584 8 8s-3.584 8-8 8-8-3.584-8-8 3.584-8 8-8zm0 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path></svg>
+                        <input type="text" id="ins" maxlength="25" size="40" value="Откуда" onclick="delete_text('ins')">
+                        <img src="Images/Cros.ico" class="img3" onclick="delete_button('ins')">
+                    </div>
+                    <div class="div3">
+                        <svg class="p1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#0400ff" d="M12 4c4.416 0 8 3.584 8 8s-3.584 8-8 8-8-3.584-8-8 3.584-8 8-8zm0 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path></svg>
+                        <input class="inp1" type="text" id="inf" maxlength="25" size="40" value="Куда" onclick="delete_text('inf')">
+                        <img src="Images/Cros.ico" class="img3" onclick="delete_button('inf')">
+                    </div>
+                    <!-- <h1>Выберите класс такси</h1> -->
+                    <!--Pictures of taxi-->
+                    <div class="cars">
+                        <div class="img2" id="c1" onclick="carPush('c1')">
+                            <img src="Images/taxi_car.png">
+                            <p class="cartext">Эконом</p>
+                            <p class="cartext">139P</p>
+                        </div>
+                        <div class="img2" id="c2" onclick="carPush('c2')">
+                            <img src="Images/taxi_car.png">
+                            <p class="cartext">Комфорт</p>
+                            <p class="cartext">200P</p>
+                        </div>
+                        <div class="img2"  id="c3" onclick="carPush('c3')">
+                            <img src="Images/taxi_car.png" >
+                            <p class="cartext">Комфорт+</p>
+                            <p class="cartext">249P</p>
+                        </div>
+                        <div class="img2" id="c4" onclick="carPush('c4')">
+                            <img src="Images/taxi_car.png" >
+                            <p class="cartext">Бизнес</p>
+                            <p class="cartext">421P</p>
+                        </div>
+                    </div>
+                    <table class="table1">
+                        <tbody>
+                            <tr>
+                                <!-- <td class="td1"><input type="button"  value="Пожелания" onclick="tripset()"></td> -->
+                                <td class="td1"><a class="btn2">Пожелания</a></td>
+                                <!-- <td><input type="button"  value="Вид оплаты" onclick="moneyset()"></td> -->
+                                <td><a class="btn3">Вид оплаты</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <p><input class="btn1" type="button"  value="Заказать" onclick="order()"></p>-->
+                    <a href="javascript: goToPage();" class="btn1" tabindex="0">Заказать</a>
+                    <!-- <a href="HTML/After_order.html" class="btn1" tabindex="0">Заказать</a> -->
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,20 +1,33 @@
 .body{
     background-color: orange;
     background-image: url(../Images/Background.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
 }
-.div1{
-    /* background-color: white; */
-    height: 110%;
+html{
+    height: 800px;
+}
+p{
+    color: #000000; 
+     font-family: ‘Lato’, sans-serif; 
+     font-size: 16px; 
+     font-weight: 300; 
+     line-height: 36px; 
+     margin: 0 0 0px; 
 }
 .div2{
     background-color: white;
-    height: 720px;
+    height: 740px;
     width: 412px;
     border-radius: 40px;
+    /* border: rgba(0, 0, 0, 0.507) solid 3px; */
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
 }
 .img1{
     width: 90%;
-    height: 45%;
+    height: 54%;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -42,6 +55,7 @@
     border-radius: 10px;
     padding-left: 4px;
     padding-right: 4px;
+    background: white;
 }
 input[type="text"] {
     border: 1px solid #ffffff;
@@ -78,7 +92,19 @@ input[type="text"] {
  .img3:hover{
     background-color: rgba(128, 128, 128, 0.200);
  }
- h1 { color: #000000; font-family: ‘Lato’, sans-serif; font-size: 30px; font-weight: 300; line-height: 58px; margin: 0 0 0px; }
+ h1 { 
+     font-family: ‘Lato’, sans-serif;
+     line-height: 58px; 
+     margin: 0 0 0px; 
+}
+h2 {
+    color: #000000; 
+     font-family: ‘Lato’, sans-serif; 
+     font-size: 20px; 
+     font-weight: 600; 
+     line-height: 40px; 
+     margin: 0 0 0px; 
+}
 
  .td3{
     color: #1d1d1d; font-family: ‘Lucida Sans’, Arial, sans-serif;
@@ -90,6 +116,7 @@ input[type="text"] {
  }
  .cartext{
      margin: 0px;
+     line-height: normal;
  }
  .cars{
     display: flex;
@@ -97,4 +124,24 @@ input[type="text"] {
     box-sizing: border-box;
     width: 90%;
     margin-top: 2px;
+ }
+ .ordbigdiv{
+     background: white;
+     width: 400px;
+     height: 400px;
+     margin-top: 10%;
+     border-radius: 40px;
+     -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
+ }
+ .div_info{
+     background-color: rgba(212, 212, 212, 0.541);
+     padding-bottom: 47px;
+    -moz-border-radius-bottomright: 40px;
+    -webkit-border-bottom-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    -webkit-border-bottom-left-radius: 40px;
+    border-bottom-left-radius: 40px;
  }
