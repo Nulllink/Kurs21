@@ -17,12 +17,12 @@
                 <form class="form1">
                     <div class="div3">
                         <svg class="p1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#FA3E2C" d="M12 4c4.416 0 8 3.584 8 8s-3.584 8-8 8-8-3.584-8-8 3.584-8 8-8zm0 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path></svg>
-                        <input type="text" id="ins" maxlength="25" size="40" value="Откуда" onclick="delete_text('ins')">
+                        <input class="inputpos" type="text" id="ins" maxlength="25" size="40" value="Откуда" onclick="delete_text('ins')">
                         <img src="Images/Cros.ico" class="img3" onclick="delete_button('ins')">
                     </div>
                     <div class="div3">
                         <svg class="p1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#0400ff" d="M12 4c4.416 0 8 3.584 8 8s-3.584 8-8 8-8-3.584-8-8 3.584-8 8-8zm0 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path></svg>
-                        <input class="inp1" type="text" id="inf" maxlength="25" size="40" value="Куда" onclick="delete_text('inf')">
+                        <input class="inputpos" type="text" id="inf" maxlength="25" size="40" value="Куда" onclick="delete_text('inf')">
                         <img src="Images/Cros.ico" class="img3" onclick="delete_button('inf')">
                     </div>
                     <!-- <h1>Выберите класс такси</h1> -->
@@ -53,9 +53,9 @@
                         <tbody>
                             <tr>
                                 <!-- <td class="td1"><input type="button"  value="Пожелания" onclick="tripset()"></td> -->
-                                <td class="td1"><a class="btn2">Пожелания</a></td>
+                                <td class="td1"><a class="btn2" onclick="menuset()">Пожелания</a></td>
                                 <!-- <td><input type="button"  value="Вид оплаты" onclick="moneyset()"></td> -->
-                                <td><a class="btn3">Вид оплаты</a></td>
+                                <td><a class="btn3" onclick="menupay()">Вид оплаты</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -63,6 +63,12 @@
                     <a href="javascript: goToPage();" class="btn1" tabindex="0">Заказать</a>
                     <!-- <a href="HTML/After_order.html" class="btn1" tabindex="0">Заказать</a> -->
                 </form>
+                <div class="menuset" id="menuset">
+                    <div align="right">
+                        <img src="Images/Cros.ico" class="img3" onclick="menuset2()">
+                    </div>
+                    <input class="comment" type="text" id="comment" maxlength="45" size="40" value="Комментарий" onclick="delete_text('comment')">
+                </div>
             </div>
         </div>
     </body>

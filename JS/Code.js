@@ -2,10 +2,10 @@ function order_onload(){
     var string = decodeURIComponent(location.search.substr(1)).split('&');
     string = string[1];
     string = string.split('$');
-    document.getElementById("start").innerHTML = "Машина приедет к " + string[0];
-    document.getElementById("finish").innerHTML = "Конечная точка маршрута: " + string[1];
-    document.getElementById("price").innerHTML = "Стоимость поездки: " + string[2];
-    document.getElementById("type").innerHTML = "Белый " + string[3] + " , номер К123РТ";
+    document.getElementById("start").innerHTML = "Машина приедет к <em>" + string[0] + "</em>";
+    document.getElementById("finish").innerHTML = "Конечная точка маршрута: <em>" + string[1] +"</em>";
+    document.getElementById("price").innerHTML = "Стоимость поездки: <strong>" + string[2] + "</strong>";
+    document.getElementById("type").innerHTML = "<em>Белый " + string[3] + "</em> , номер <strong>К123РТ</strong>";
 }
 function goToPage2(){
     var finish = document.getElementById("inf");
@@ -80,9 +80,23 @@ function delete_text(id){
         elem.value = "";
         elem.style.color = "black";
     }
+    if(elem.value == "Комментарий"){
+        elem.value = "";
+        elem.style.color = "black";
+    }
 }
 function delete_button(id){
     var elem = document.getElementById(id);
     elem.value = "";
     elem.style.color = "black";
+}
+function menuset(){
+    var elem = document.getElementById("menuset");
+    elem.style.marginTop = "-340px";
+    elem.style.transition = ".5s";
+}
+function menuset2(){
+    var elem = document.getElementById("menuset");
+    elem.style.marginTop = "0";
+    elem.style.transition = ".5s";
 }
