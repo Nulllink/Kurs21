@@ -100,3 +100,13 @@ function menuset2(){
     elem.style.marginTop = "0";
     elem.style.transition = ".5s";
 }
+function menupay(){
+    var elem = document.getElementById("menupay");
+    elem.style.marginTop = "-670px";
+    elem.style.transition = ".5s";
+}
+function menupay2(){
+    var elem = document.getElementById("menupay");
+    elem.style.marginTop = "0";
+    elem.style.transition = ".5s";
+}

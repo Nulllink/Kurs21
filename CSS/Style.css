@@ -177,3 +177,14 @@ h2 {
  .textset{
      line-height: 20px;
  }
+ .menupay{
+    background-color: white;
+    width: 412px;
+    height: 323px;
+    display: block;
+    z-index: 999;
+    position: relative;
+    border-top: 5px solid black;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
