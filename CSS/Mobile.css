@@ -1,10 +1,11 @@
 @media (max-width:500px){
     .div2{
         height: 100%;
+        border-radius: 0px;
     }
-    /* a.btn1{
-        margin-top: 6.2%;
-    } */
+    a.btn1{
+        border-radius: 0px;
+    }
     .img1{
         height: 51.8%;
     }

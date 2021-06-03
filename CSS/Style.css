@@ -1,7 +1,7 @@
 .body{
     background-color: orange;
     background-image: url(../Images/Background.jpg);
-    height: 800px;
+    /* height: 800px; */
     background-repeat: no-repeat;
 }
 p{
@@ -204,12 +204,49 @@ h2 {
     color: rgb(255, 255, 255);
 }
 .textProfile{
-    font-size: 14px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
+    color: orange;
+    text-decoration: none;
+    font-style: normal;
 }
 .divProfile{
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+}
+.avatar{
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.form_profile{
+    margin-top: 30px;
+}
+#martop{
+    margin-top: 50px;
+}
+#input_name{
+    margin-top: 30px;
+    text-align: center;
+    border: 0px;
+    font-size: 40px;
+}
+#input_low{
+    width: 200px;
+    border: 0px;
+}
+.p_name{
+    line-height: 20px;
+    margin-top: 10px;
+}
+.p_low{
+    font-size: 22px;
+}
+.p_flname{
+    font-size: 20px;
+}
+#div_profile{
+    height: 520px;
 }
