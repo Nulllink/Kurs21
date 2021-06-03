@@ -102,7 +102,7 @@ function menuset2(){
 }
 function menupay(){
     var elem = document.getElementById("menupay");
-    elem.style.marginTop = "-670px";
+    elem.style.marginTop = "-660px";
     elem.style.transition = ".5s";
 }
 function menupay2(){

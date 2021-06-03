@@ -250,3 +250,68 @@ h2 {
 #div_profile{
     height: 520px;
 }
+.form_pay{
+    text-align: left;
+    margin-left: 20px;
+}
+.div_pay{
+    position: relative;
+    margin-bottom: 2px;
+    margin-top: 50px;
+}
+.radio_input{
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;/* убираем стандартные кружочки */
+    position: absolute;
+}
+.radio_label{
+    padding-left: 25px;/* отступ слева */
+    font-size: 1rem;
+    color: #444;
+    cursor: pointer; /* курсор рука */ 
+    font-family: ‘Lato’, sans-serif;
+}
+.radio_label:before {
+    content: "";
+    display: block; /* не в строку */
+    width: 16px; /* ширина блока */
+    height: 16px;/* высота блока */
+    border: 1px solid #ccc;/* рамка */
+    background-color: #fff; /* цвет фона */
+    border-radius: 50%;/* получаем круг */
+    position: absolute;/* расположен точно в родителе */
+    top: 0; /* расстояние от верха родителя */
+    left: 0;/* расстояние слева от родителя */
+      z-index: 1; /* на нижнем слое */
+    transition: border .1s linear;/* плавный переход для border */
+}
+.radio_label:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #49d120;
+    border-radius: 50%;
+    opacity: 0; /* полностью прозрачный */
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 2;/* на верхнем слое */
+    transition: opacity .1s linear; /* плавный переход для opacity */
+}
+.radio_input:checked + .radio_label:before {
+
+    border-color: #319612;
+
+}
+.radio_input:checked + .radio_label:after {
+    opacity: 1;
+}
+.div_pay_img{
+    position: absolute;
+    margin-left: 25px;
+}
+#div_pay_top{
+    margin-top: 10px;
+}
