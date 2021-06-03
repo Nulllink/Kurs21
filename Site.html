@@ -9,14 +9,23 @@
         <link rel="stylesheet" type="text/css" href="CSS/btn2.css">
         <link rel="stylesheet" type="text/css" href="CSS/btn3.css">
         <link rel="stylesheet" type="text/css" href="CSS/Mobile.css">
+        <link rel="stylesheet" type="text/css" href="CSS/Side.css">
         <script type="text/javascript" src="JS/Code.js"></script>
     </head>
     <body class="body">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">О сервисе</a>
+            <a href="#">Водителям</a>
+            <a href="#">Бизнесу</a>
+            <a href="#">Партнёрам</a>
+        </div>
+        <!--side panel-->
         <div class="div1" align="middle">
             <div class="div2">
                 <div class="divinline">
-                    <img src="Images/list.ico">
-                    <p class="siteName"><span class="textEra">New Era</span> <span class="textTaxi">Taxi</span></p>
+                    <img src="Images/list.ico" onclick="openNav()">
+                    <p class="siteName"><span class="textEra">New Era </span><span class="textTaxi">Taxi</span></p>
                     <div class="divProfile">
                         <a href="HTML/Profile.html" class="textProfile">NewMan</a>
                         <img src="Images/person.ico">
