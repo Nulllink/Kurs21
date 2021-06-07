@@ -4,11 +4,28 @@
         <title>Заказ прошёл успешно</title>
         <link rel="shortcut icon" href="../Images/taxi_icon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/Side.css">
         <script type="text/javascript" src="../JS/Code.js"></script>
     </head>
     <body class="body" onload="order_onload()">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">О сервисе</a>
+            <a href="#">Водителям</a>
+            <a href="#">Бизнесу</a>
+            <a href="#">Партнёрам</a>
+        </div>
+        <!--side panel-->
         <div align="middle">
             <div class="ordbigdiv">
+                <div class="divinline" id="top_div_order">
+                    <img src="../Images/list.ico" onclick="openNav()">
+                    <p class="siteName"><span class="textEra">New Era </span><span class="textTaxi">Taxi</span></p>
+                    <div class="divProfile">
+                        <a href="../HTML/Profile.html" class="textProfile">NewMan</a>
+                        <img src="../Images/person.ico">
+                    </div>
+                </div>
                 <div>
                     <h1>Спасибо за заказ!</h1>
                     <h2>Такси уже в пути!</h2>

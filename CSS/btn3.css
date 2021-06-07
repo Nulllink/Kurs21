@@ -1,3 +1,16 @@
+/* #input_low{
+  border: 2px solid black;
+}
+#input_name{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.button_img{
+  opacity: 1;
+}
+.avatar{
+  border: 2px dashed orange;
+} */
 a.btn3 {
     display: inline-block;
     text-shadow: 1px 1px #f7dbba;

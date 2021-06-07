@@ -129,12 +129,15 @@ h2 {
  .ordbigdiv{
      background: white;
      width: 400px;
-     height: 400px;
+     /* height: 400px; */
      margin-top: 10%;
      border-radius: 40px;
      -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.4);
+ }
+ #top_div_order{
+     padding-top: 20px;
  }
  .div_info{
      background-color: rgba(212, 212, 212, 0.541);
@@ -248,7 +251,7 @@ h2 {
     font-size: 20px;
 }
 #div_profile{
-    height: 520px;
+    height: 530px;
 }
 .form_pay{
     text-align: left;
@@ -314,4 +317,24 @@ h2 {
 }
 #div_pay_top{
     margin-top: 10px;
+}
+.button_img{
+    height: 10%;
+    margin-top: 40px;
+    margin-left: -185px;
+    opacity: 0;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 6px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+}
+.button_img:hover{
+    opacity: 1;
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
 }
